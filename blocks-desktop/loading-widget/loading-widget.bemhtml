@@ -1,6 +1,6 @@
-block load-widget {
+block loading-widget {
 
-    content: 'Hellow, world!'
+    content: 'Hello, world!'
 
     js: true
 
