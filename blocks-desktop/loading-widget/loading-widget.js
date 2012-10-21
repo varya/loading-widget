@@ -8,6 +8,10 @@ BEM.DOM.decl('loading-widget', {
 
                 var lWidget = this;
 
+                $('body').on('change', '.category', function(){
+                    console.log(arguments);
+                })
+
                 $.getJSON(
                     '../../blocks-desktop/database/database.json',
                     function(data) {
