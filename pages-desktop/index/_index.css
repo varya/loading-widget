@@ -1,0 +1,64 @@
+/* ../../blocks-desktop/loading-widget/__loader/loading-widget__loader.css begin */
+.loading-widget__loader {
+
+    display: none;
+
+    margin: auto;
+
+    width: 220px;
+    height: 19px;
+
+    background:url(../../blocks-desktop/loading-widget/__loader/loading-widget__loader.gif)
+
+}
+
+.loading-widget__loader_visibility_visible {
+
+    display: block;
+
+}
+
+/* ../../blocks-desktop/loading-widget/__loader/loading-widget__loader.css end */
+
+/* ../../blocks-desktop/category/category.css begin */
+.category {
+
+    border: 1px solid #555;
+    padding: 0.5em;
+    font-size: 15px;
+    line-height: 1.2em;
+    width: 100%;
+    background: #fff;
+    border-radius: 0.5em;
+}
+
+/* ../../blocks-desktop/category/category.css end */
+
+/* ../../blocks-desktop/submit/submit.css begin */
+.submit {
+
+    border: 1px solid #555;
+    padding: 0.5em;
+    font-size: 15px;
+    line-height: 1.2em;
+    width: 100%;
+    background: #fff;
+    border-radius: 0.5em;
+}
+
+/* ../../blocks-desktop/submit/submit.css end */
+
+/* ../../blocks-desktop/urls/urls.css begin */
+.urls {
+
+    border: 1px solid #555;
+    padding: 0.5em;
+    font-size: 15px;
+    line-height: 1.2em;
+    width: 100%;
+    background: #fff;
+    border-radius: 0.5em;
+}
+
+/* ../../blocks-desktop/urls/urls.css end */
+
