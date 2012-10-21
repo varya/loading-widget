@@ -3,4 +3,9 @@ node_modules/
 .bem/cache/
 
 pages-desktop/*/*
-!pages-desktop/*/*.bemjson.js
+!pages-desktop/*/*.html
+!pages-desktop/*/*.css
+!pages-desktop/*/*.js
+pages-desktop/*/*.deps.js
+pages-desktop/*/*.meta.js
+pages-desktop/*/*.bemdecl.js
