@@ -2,6 +2,7 @@
     block: 'b-page',
     title: 'Title of the page',
     favicon: '/favicon.ico',
+    js: true,
     head: [
         { elem: 'css', url: '_index.css', ie: false },
         { elem: 'css', url: '_index', ie: true },
