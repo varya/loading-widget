@@ -14,12 +14,12 @@ BEM.DOM.decl('loading-widget', {
 
                     var link = '../../blocks-desktop/database/_' + cat + '/database_' + cat + '_' + subCat + '.json';
 
-                    lWidget.setMod(lWidget.elem('loader'), 'visibility', 'visible');
+                    lWidget.setMod('loading', 'yes');
 
                     $.getJSON(
                         link,
                         function(data) {
-                            lWidget.delMod(lWidget.elem('loader'), 'visibility');
+                            lWidget.delMod('loading');
                             BEM.DOM.replace(lWidget.findElem('urls'), BEMHTML.apply({
                                 block: 'urls',
                                 mix: [ { block: 'loading-widget', elem: 'urls' } ],
@@ -54,11 +54,33 @@ BEM.DOM.decl('loading-widget', {
                                 elem: 'urls'
                             },
                             {
-                                block: 'submit'
+                                block: 'submit',
+                                mix: [{
+                                    block: 'loading-widget',
+                                    elem: 'submit'
+                                }]
                             }
                         ]));
                     }
                 )
+
+            }
+
+        },
+
+        'loading': {
+
+            'yes' : function() {
+
+                this.setMod(this.elem('loader'), 'visibility', 'visible');
+                this.elem('submit urls').attr('disabled', 'disabled');
+
+            },
+
+            '' : function() {
+
+                this.delMod(this.elem('loader'), 'visibility');
+                this.elem('submit urls').removeAttr('disabled');
 
             }
 
