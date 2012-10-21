@@ -1,4 +1,5 @@
 bem-bl/
 node_modules/
 
-pages-desktop/*/_*
+pages-desktop/*/*
+!pages-desktop/*/*.bemjson.js
