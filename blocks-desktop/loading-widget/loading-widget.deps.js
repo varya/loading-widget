@@ -1,6 +1,9 @@
 ({
     shouldDeps: [
         {
+            elem: 'loader'
+        },
+        {
             block: 'category'
         },
         {

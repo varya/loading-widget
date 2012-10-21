@@ -13,10 +13,12 @@ BEM.DOM.decl('loading-widget', {
                     var link = '../../blocks-desktop/database/_' + cat + '/database_' + cat + '_' + subCat + '.json';
 
                     lWidget.findElem('urls').remove();
+                    lWidget.setMod(lWidget.elem('loader'), 'visibility', 'visible');
 
                     $.getJSON(
                         link,
                         function(data) {
+                            lWidget.delMod(lWidget.elem('loader'), 'visibility');
                             BEM.DOM.append(lWidget.domElem, BEMHTML.apply({
                                 block: 'urls',
                                 mix: [ { block: 'loading-widget', elem: 'urls' } ],
@@ -41,7 +43,7 @@ BEM.DOM.decl('loading-widget', {
                 $.getJSON(
                     '../../blocks-desktop/database/database.json',
                     function(data) {
-                        BEM.DOM.append(lWidget.domElem, BEMHTML.apply({
+                        BEM.DOM.prepend(lWidget.domElem, BEMHTML.apply({
                             block: 'category',
                             categories: data
                         }));

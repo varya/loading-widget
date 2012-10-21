@@ -1,0 +1,16 @@
+.loading-widget__loader {
+
+    display: none;
+
+    width: 220px;
+    height: 19px;
+
+    background:url('loading-widget__loader.gif')
+
+}
+
+.loading-widget__loader_visibility_visible {
+
+    display: block;
+
+}
