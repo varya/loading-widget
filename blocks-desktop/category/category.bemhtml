@@ -9,14 +9,14 @@ block category {
             category.subs.forEach(function(subCategory){
                 grp.push({
                     tag: 'option',
-                    attrs: { value: subCategory },
+                    attrs: { value: subCategory.replace(' ', '-') },
                     content: subCategory
                 });
             });
 
             ctn.push({
                 tag: 'optgroup',
-                attrs: { 'label' : category.name },
+                attrs: { 'label' : category.name.replace(' ', '-') },
                 content: grp
             })
         });
