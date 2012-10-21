@@ -2,6 +2,8 @@ block loading-widget {
 
     js: true
 
+    tag: 'form'
+
     content: [
         { elem: 'loader' }
     ]
