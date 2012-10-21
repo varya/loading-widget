@@ -6,10 +6,15 @@ BEM.DOM.decl('loading-widget', {
 
             'inited' : function() {
 
+                var lWidget = this;
+
                 $.getJSON(
                     '../../blocks-desktop/database/database.json',
                     function(data) {
-                        console.log(arguments);
+                        BEM.DOM.append(lWidget.domElem, BEMHTML.apply({
+                            block: 'category',
+                            categories: data
+                        }));
                     }
                 )
 
