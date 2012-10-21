@@ -1,0 +1,26 @@
+[
+    {
+        name: 'layout',
+        subs: [ 'html', 'css' ]
+    },
+    {
+        name: 'server script',
+        subs: [ 'python', 'asp', 'ruby', 'php' ]
+    },
+    {
+        name: 'multimedia',
+        subs: [ 'mpeg4', 'avi', 'mp3' ]
+    },
+    {
+        name: 'misc',
+        subs: [ 'text', 'icon' ]
+    },
+    {
+        name: 'ajax',
+        subs: [ 'python', 'asp', 'ruby', 'php' ]
+    },
+    {
+        name: 'graphics',
+        subs: [ 'gif', 'png', 'jpeg' ]
+    }
+]
