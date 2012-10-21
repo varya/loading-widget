@@ -2,7 +2,11 @@ block category {
     tag: 'select',
     js: true,
     content: {
-        var ctn = [];
+        var ctn = [{
+            tag: 'option',
+            attrs: { value: '' },
+            content: '---'
+        }];
         this.ctx.categories.forEach(function(category){
             var grp = [];
 
