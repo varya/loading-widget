@@ -6,7 +6,12 @@ BEM.DOM.decl('loading-widget', {
 
             'inited' : function() {
 
-                console.log('test');
+                $.getJSON(
+                    '../../blocks-desktop/database/database.json',
+                    function(data) {
+                        console.log(arguments);
+                    }
+                )
 
             }
 
