@@ -7,6 +7,9 @@
             block: 'category'
         },
         {
+            block: 'submit'
+        },
+        {
             block: 'urls'
         }
     ]

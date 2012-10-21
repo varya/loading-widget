@@ -47,6 +47,9 @@ BEM.DOM.decl('loading-widget', {
                             block: 'category',
                             categories: data
                         }));
+                        BEM.DOM.append(lWidget.domElem, BEMHTML.apply({
+                            block: 'submit'
+                        }));
                     }
                 )
 

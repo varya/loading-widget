@@ -1,0 +1,10 @@
+block submit {
+
+    tag: 'input'
+
+    attrs: {
+        type: 'submit',
+        value: 'Submit'
+    }
+
+}
