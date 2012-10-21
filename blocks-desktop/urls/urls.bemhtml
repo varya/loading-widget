@@ -1,8 +1,14 @@
 block urls {
 
-    tag: 'textarea',
+    tag: 'textarea'
+
     content: {
         return this.ctx.urls.join('\n');
+    }
+
+    attrs: {
+        cols: '50',
+        rows: 20
     }
 
 }
