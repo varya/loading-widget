@@ -10,6 +10,8 @@ BEM.DOM.decl('loading-widget', {
 
                 var getLinks = function(cat, subCat) {
 
+                    if (subCat === '') return;
+
                     var link = '../../blocks-desktop/database/_' + cat + '/database_' + cat + '_' + subCat + '.json';
 
                     lWidget.findElem('urls').remove();
