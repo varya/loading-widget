@@ -12,11 +12,14 @@ BEM.DOM.decl('loading-widget', {
 
                     var link = '../../blocks-desktop/database/_' + cat + '/database_' + cat + '_' + subCat + '.json';
 
+                    lWidget.findElem('urls').remove();
+
                     $.getJSON(
                         link,
                         function(data) {
                             BEM.DOM.append(lWidget.domElem, BEMHTML.apply({
                                 block: 'urls',
+                                mix: [ { block: 'loading-widget', elem: 'urls' } ],
                                 urls: data
                             }));
                         }
