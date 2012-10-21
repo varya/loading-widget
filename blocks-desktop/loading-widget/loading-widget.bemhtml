@@ -1,7 +1,1 @@
-block loading-widget {
-
-    content: 'Hello, world!'
-
-    js: true
-
-}
+block loading-widget, js: true
