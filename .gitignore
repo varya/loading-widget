@@ -1,5 +1,6 @@
 bem-bl/
 node_modules/
+.bem/cache/
 
 pages-desktop/*/*
 !pages-desktop/*/*.bemjson.js
