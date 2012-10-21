@@ -1,3 +1,7 @@
-content: 'Hellow, world!'
+block load-widget {
 
-js: true
+    content: 'Hellow, world!'
+
+    js: true
+
+}
