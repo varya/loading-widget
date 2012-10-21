@@ -1,0 +1,25 @@
+block category {
+    tag: 'select',
+    js: true,
+    content: {
+        var ctn = [];
+        this.ctx.categories.forEach(function(category){
+            var grp = [];
+
+            category.subs.forEach(function(subCategory){
+                grp.push({
+                    tag: 'option',
+                    attrs: { value: subCategory },
+                    content: subCategory
+                });
+            });
+
+            ctn.push({
+                tag: 'optgroup',
+                attrs: { 'label' : category.name },
+                content: grp
+            })
+        });
+        return ctn;
+    }
+}
