@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Title of the page',
+    title: 'All the URL of the planet',
     favicon: '/favicon.ico',
     js: true,
     head: [
