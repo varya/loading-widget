@@ -15,7 +15,7 @@ BEM.DOM.decl('loading-widget', {
                     $.getJSON(
                         link,
                         function(data) {
-                            BEM.DOM.append(lWidget.elem('urls'), BEMHTML.apply({
+                            BEM.DOM.append(lWidget.domElem, BEMHTML.apply({
                                 block: 'urls',
                                 urls: data
                             }));
